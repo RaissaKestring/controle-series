@@ -17,4 +17,8 @@ class SeriesController extends Controller
         compact(var_name: 'series');
         return view('series.index')->with('series', $series);
     }
+
+    public function create() {
+        return view('series.create');
+    }
 }
