@@ -15,6 +15,6 @@ class SeriesController extends Controller
         ];
 
         compact(var_name: 'series');
-        return view('listar-series', compact(var_name: 'series'));
+        return view('series.index')->with('series', $series);
     }
 }
